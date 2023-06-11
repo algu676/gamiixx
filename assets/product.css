@@ -1,0 +1,20 @@
+.product {
+  background-color: aqua;
+  display: inline;
+  padding: 20 50px;
+}
+
+.img {
+  position: relative;
+  left: 15%;
+  width: 50%;
+  float: left;
+  height: 300;
+}
+
+.price {
+  position: relative;
+  margin-top: 5%;
+  width: 50%;
+  float: right;
+}

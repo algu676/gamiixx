@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    font-family: "微軟正黑體";
+    ;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: #8e8ca8;
+}
+
+.topmenu {
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background-color: #7d93b5;
+    border-bottom-style: solid;
+    border-width: 5px;
+    border-color: rgb(36, 83, 129);
+    z-index: 1000;
+}
+
+.logo a {
+    padding: 50;
+    background-image: url(image/img/logo.png);
+    background-size: 100%;
+    position: absolute;
+    left: 37%;
+    width: 150px;
+    height: 60px;
+}
+
+.nav1 {
+    position: absolute;
+    left: 3%;
+    top: 3%;
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 20px;
+    transition: 0.2s;
+    color: black;
+}
+
+.nav2 {
+    position: absolute;
+    left: 10%;
+    top: 3%;
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 20px;
+    transition: 0.2s;
+    color: black;
+}
+
+.nav3 {
+    position: absolute;
+    left: 17%;
+    top: 3%;
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 20px;
+    transition: 0.2s;
+    color: black;
+}
+
+.nav4 {
+    position: absolute;
+    left: 80%;
+    top: 3%;
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 20px;
+    transition: 0.2s;
+    color: black;
+}
+
+.nav5 {
+    position: absolute;
+    left: 87%;
+    top: 3%;
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 20px;
+    transition: 0.2s;
+    color: black;
+}
+
+.nav6 {
+    position: absolute;
+    left: 94%;
+    top: 3%;
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 20px;
+    transition: 0.2s;
+    color: black;
+}
+
+.nav1:hover {
+    background-color: rgb(126, 200, 240);
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 3px #388fae;
+    font-weight: bold;
+}
+
+.nav2:hover {
+    background-color: rgb(126, 200, 240);
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 3px #388fae;
+    font-weight: bold;
+}
+
+.nav3:hover {
+    background-color: rgb(126, 200, 240);
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 3px #388fae;
+    font-weight: bold;
+}
+
+.nav4:hover {
+    background-color: rgb(126, 200, 240);
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 3px #388fae;
+    font-weight: bold;
+}
+
+.nav5:hover {
+    background-color: rgb(126, 200, 240);
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 3px #388fae;
+    font-weight: bold;
+}
+
+.nav6:hover {
+    background-color: rgb(126, 200, 240);
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 3px #388fae;
+    font-weight: bold;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    left: 720px;
+}
+
+.searchbar input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    border: none;
+}
+
+.searchbar button {
+    padding: 5px 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gotop {
+    z-index: 10;
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    opacity: 0.80;
+}
+
+footer {
+    position: fixed;
+    /* 將頁尾固定在網頁底部 */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #444486;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* header end */
+
+.clear {
+    clear: both;
+    display: inline;
+}

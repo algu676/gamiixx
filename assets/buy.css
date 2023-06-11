@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bc {
+    background-color: #8e8ca8;
+}
+
+.topmenu {
+    position: fixed;
+    /* 將導航欄固定在網頁頂部 */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    /* 調整層級使導航欄位於最上層 */
+}
+
+/* 調整導航欄和內容之間的間距 */
+.topmenu+.d3 {
+    margin-top: 50px;
+}
+
+.d-foot {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.fix {
+    flex-direction: row-reverse;
+    background-color: #fbf7f4;
+}
+
+.center {
+    align-items: center;
+}
+
+.align-cen {
+    text-align: center;
+}
+
+.div-center {
+    margin: 0px auto;
+    text-align: center;
+}
+
+.d1 {
+    border-style: solid;
+    background-color: #82778e;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.d2 {
+    margin: 10px;
+}
+
+.d3 {
+    margin-left: 20%;
+}
+
+.d4 {
+    width: auto;
+    height: 25px;
+}
+
+.w1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.w2 {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+
+.wb {
+    font-weight: bold;
+}
+
+.wm {
+    margin-bottom: 5px;
+}
+
+.i1 {
+    border-radius: 10px;
+}
+
+.tb {
+    border-style: solid;
+    border-color: #5d5957;
+}
+
+.tbb {
+    background-color: white;
+}
+
+.b1-1 {
+    border-style: none;
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #5d5957;
+    color: #fbf7f4;
+}
+
+.b1-1:hover {
+    background-color: #c3bbb6;
+    color: #5d5957;
+}
+
+.b1-2 {
+    border-style: none;
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #5d5957;
+    color: #fbf7f4;
+}
+
+.b1-2:hover {
+    background-color: #c3bbb6;
+    color: #5d5957;
+}
+
+.b2 {
+    border: 2px solid #463c07;
+    border-style: none;
+    width: 100px;
+    height: 30px;
+
+    background-color: #d4d710;
+    color: #000000;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.b2:hover {
+    background-color: #c3bbb6;
+    color: #5d5957;
+}
+
+.b3 {
+    border: 2px solid #463c07;
+    border-style: none;
+    width: 100px;
+    height: 30px;
+    background-color: #d4d710;
+    color: #000000;
+    border-radius: 5px;
+}
+
+.b3:hover {
+    background-color: #c3bbb6;
+    color: #5d5957;
+}
+
+
+
+
+
+
+.f1 {
+    height: 100px;
+}

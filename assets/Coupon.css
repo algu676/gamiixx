@@ -1,0 +1,219 @@
+/*框架排版*/
+div .content{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+div .blank{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    border-bottom-style: solid;
+    border-width: medium;
+    position: relative;
+}
+div .design {
+    background:linear-gradient(90deg, brown, rgb(223, 221, 221));
+    height: 87.3vh;
+    width: 100%;
+    position: fixed;
+    padding: 0 0 0 0;
+    z-index: 0;
+}
+
+/*背景字樣*/
+img .letter{
+    -webkit-mask-image: radial-gradient(transparent 0%, transparent 50%, black 50%, black);
+    mask-image: radial-gradient(transparent 0%, transparent 50%, black 50%, black);
+}
+div .letter1{
+    -webkit-mask-image: radial-gradient(black 0%, black 50%, transparent 50%, transparent);
+    text-align: center;
+    width: 17.5vw;
+    height: 17.5vw;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 0 0 0 0;
+    background-color: white;
+}
+div .letter2{
+    -webkit-mask-image: radial-gradient(black 0%, black 50%, transparent 50%, transparent);
+    text-align: center;
+    width: 17.5vw;
+    height: 17.5vw;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 0 0 0 0;
+    margin-left: 0%;
+    margin-top: -10%;
+    background-color: white;
+}
+div .letter3{
+    -webkit-mask-image: radial-gradient(black 0%, black 50%, transparent 50%, transparent);
+    text-align: center;
+    width: 17.5vw;
+    height: 17.5vw;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 0 0 0 0;
+    margin-left: 82.5%;
+    margin-top: -10%;
+    background-color: white;
+}
+div .letter4{
+    -webkit-mask-image: radial-gradient(black 0%, black 50%, transparent 50%, transparent);
+    text-align: center;
+    width: 17.5vw;
+    height: 17.5vw;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 0 0 0 0;
+    margin-left: 82.5%;
+    margin-top: -10%;
+    background-color: white;
+}
+
+/*實際介面*/
+div .interface {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 60%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    z-index: 2;
+}
+
+/*會員中心*/
+div .user_center_navi{
+    height: 87.3vh;
+    width: 20%;
+    float: left;
+    font-size: 30px;
+    display: flex;
+    justify-content:left; 
+    align-items: left;
+    flex-direction: column;
+}
+div .navi_title{
+    text-align: left;
+    font-weight: bold;    
+    border-bottom: 5px black solid;
+    margin: 2% 0;
+    padding: 0 5%;
+}
+div .navi_button{
+    font-size: 30px;
+    padding: 0 7%;
+    border-radius: 15px;
+    margin: 2% 0;
+}
+div .navi_button:hover{
+    font-weight: bold;
+    background-color: brown;
+    color: white;
+    transition: 0.3s;
+}
+div .navi_button > a{
+    color: inherit;
+    text-decoration: none;
+}
+div .navi_button > a:checked{
+    color: inherit;
+    text-decoration: none;
+}
+div .here{
+    font-weight: bold;
+    background-color: brown;
+    color: white;
+    transition: 0.3s;
+}
+
+
+/*優惠券*/
+div .coupon{
+    height: 100%;
+    width: 80%;
+    float: right;
+    display: flex;
+    justify-content:left; 
+    align-items: center;
+    flex-direction: column;
+}
+div .title{
+    font-size: 80px;
+    width:100%;
+    padding-left: 5%;
+    text-align: left;
+    margin: 20px 0 0 0;
+    color: brown;
+    font-weight: 700;
+}
+div .ticket {
+    width: 90%;
+    background-color: white;
+    box-shadow: 0em 0em 0.1em black;
+    font-size: 30px;
+    border-radius: 15px;
+    padding: 0 2%;
+    margin: 2% 0;
+}
+div .ticket > table {
+    font-size: 20px;
+}
+.highlight {
+    font-weight: bold;
+    font-size: x-large;
+}
+.condition {
+    background-color: rgb(180, 180, 180);
+}
+.date {
+    font-weight: bolder;
+    color: brown;
+}
+.highlight > a {
+    text-decoration:none;
+    color:inherit;
+}
+.highlight > a:checked {
+    text-decoration:none;
+    color:inherit;
+}
+.highlight > a:hover {
+    font-weight: bold;
+    color: brown;
+    transition: 0.3s;
+}
+
+
+/*連結按鈕*/
+div .button {
+    width: 30%;
+    height: 40px;
+    background-color: white;
+    border: 0px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 0 4%;
+    margin: 2% 0;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+div .button > a {
+    text-decoration:none;
+    color:inherit;
+}
+div .button:hover {
+    font-weight: bold;
+    font-size: 25px;
+    color: brown;
+    transition: 0.3s;
+}
