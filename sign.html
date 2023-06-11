@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊</title>
+    <link rel="icon" type="image/x-icon" href="image/1234.png">
+    <link rel="stylesheet" href="assets/style.css"/>
+    <style>
+        /* 省略... */
+        body {
+            background-color: #8e8ca8;
+            font-family: Arial, sans-serif;
+        }
+
+        .register-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .register-form {
+            width: 400px;
+            padding: 30px;
+            background-color: #6d6279;
+            border: 2px solid #000000;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .register-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .register-form label {
+            color: #ffffff;
+        }
+
+        .register-form input[type="text"],
+        .register-form input[type="password"],
+        .register-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .register-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .register-form button:hover {
+            background-color: #333333;
+        }
+    </style>
+    <script>
+        /* 省略... */
+    </script>
+</head>
+<body>
+    <!-- header -->
+    <nav class="topmenu">
+        <div class="logo">
+            <h1>
+                <a href="about.html"></a>
+            </h1>
+        </div>
+
+        <div class="list">
+            <div>
+                <a href="index.html" style="text-decoration:none;" class="nav1">回到首頁</a>
+                <a href="login.html" style="text-decoration:none;"class="nav5">會員專區</a>
+                <a href="buy.html" style="text-decoration:none;"class="nav6">購物車</a>
+            </div>
+        </div>
+    </nav>
+    <!-- header end -->
+    <div class="register-container">
+        <div class="register-form">
+            <h2>會員註冊</h2>
+            <form name="adduser" action="adduser.jsp" method="post">
+                <label for="MemberID">會員帳號：</label>
+                <input type="text" name="MemberID" id="MemberID" required><br>
+                <label for="pwd">密碼：</label>
+                <input type="password" name="pwd" id="pwd" required><br>
+                <label for="gender">性別：</label>
+                <select name="gender" id="gender" required>
+                    <option value="">請選擇</option>
+                    <option value="male">男性</option>
+                    <option value="female">女性</option>
+                    <option value="other">其他</option>
+                </select><br>
+                <label for="email">電子郵件：</label>
+                <input type="text" name="email" id="email" required><br>
+                <label for="name">姓名：</label>
+                <input type="text" name="name" id="name" required><br>
+                <button type="submit">確定</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

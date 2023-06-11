@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="image/1234.png">
+    <link rel="stylesheet" href="assets/style.css"/>
+    <script src="logout.js"></script>
+    <style>
+        body {
+            background-color: #8e8ca8;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-form {
+            width: 500px;
+            padding: 30px;
+            background-color: #6d6279;
+            border: 2px solid #000000;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background-color: #333333;
+        }
+
+        .login-form .register-link {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .login-form .register-link a {
+            text-align: center;
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="topmenu">
+
+        <div class="logo">
+            <h1>
+              <a href="about.html"></a>
+            </h1>
+        </div>
+
+        
+
+
+      <div class="list">
+            <div>
+                <a href="about.html" style="text-decoration:none;" class="nav1">關於</a>
+                <a href="cate.jsp" style="text-decoration:none;"class="nav2">商品</a>
+                <a href="checklogin.jsp" style="text-decoration:none;"class="nav5">會員專區</a>
+                <a href="buy.html" style="text-decoration:none;"class="nav6">購物車</a>
+            </div>
+      </div>
+    </nav>
+    <div class="login-container">
+        <div class="login-form">
+            <h2>會員登入</h2>
+            <form method="POST" action="check.jsp">
+                <label for="MemberID">帳號:</label>
+                <input type="text" id="MemberID" placeholder="輸入帳號" name="MemberID" required><br>
+
+                <label for="pwd">密碼:</label>
+                <input type="password" id="pwd" placeholder="輸入密碼" name="pwd" required><br>
+
+                <input type="submit" name="b1" value="登入">
+            </form>
+
+            <div class="register-link">
+                <a href="sign.html">註冊</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

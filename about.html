@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamiiX</title>
+    <link rel="icon" type="image/x-icon" href="image/1234.png">
+    <link rel="stylesheet" href="assets/index.css"/>
+    <link rel="stylesheet" href="assets/style.css"/>
+    <script src="logout.js"></script>
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微軟正黑體";
+}
+
+.f1 {
+    height: 100px;
+}
+
+.i1 {
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+
+.i2 {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.d1 {
+    text-align: center;
+}
+
+.d11 {
+    text-align: center;
+}
+
+.d3 {
+    display: flex;
+    padding: 20px 20px 20px 20px;
+}
+
+.d4 {
+    width: auto;
+    height: 25px;
+}
+
+.w1 {
+    font-family: 標楷體;
+    font-size: 20px;
+    padding: 7px;
+}
+
+.w2 {
+    font-family: 標楷體;
+    padding: 7px;
+}
+
+.w3 {
+    padding-top: 5px;
+}
+
+.info {
+    display: none;
+    opacity: 0;
+    position: relative;
+    box-sizing: border-box;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: aliceblue;
+}
+
+.d11:hover .i2 {
+    display: none;
+}
+
+.d11:hover .info {
+    display: block;
+    animation-name: apper;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes apper {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.d3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.d2 {
+    width: 30%;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 5%;
+    background-color: #4b4789;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 4);
+}
+
+.i2 {
+    width: 300px;   
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.info {
+    margin-top: 10px;
+    width: 400px;
+}
+
+.d1 {
+    margin-top: 20px;
+}
+
+.topmenu {
+    position: fixed; /* 將導航欄固定在網頁頂部 */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999; /* 調整層級使導航欄位於最上層 */
+}
+
+/* 調整導航欄和內容之間的間距 */
+.topmenu + .d3 {
+    margin-top: 50px;
+}
+
+.center {
+    padding-top: 5%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+    .center img {
+        width: 30%;
+        height: 30%;
+    }
+    
+footer {
+    position: fixed;
+    /* 將頁尾固定在網頁底部 */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #444486;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+    </style>
+    
+</head>
+<body>
+        <!-- header -->
+        <nav class="topmenu">
+    
+          <div class="list">
+            <div>
+                <a href="index.html" style="text-decoration:none;" class="nav1">回到首頁</a>
+                <a href="cate.jsp" style="text-decoration:none;"class="nav2">遊戲選單</a>
+                <a href="checklogin.jsp" style="text-decoration:none;"class="nav5">會員專區</a>
+                <a href="buy.html"style="text-decoration:none;"class="nav5">購物車</a>
+        <nav class="topmenu">
+            <div class="logo">
+                <h1>
+                    <a href="about.html"></a>
+                </h1>
+            </div>
+    
+            
+
+          <div class="list">
+            <div>
+                <a href="index.html" style="text-decoration:none;" class="nav1">回到首頁</a>
+                <a href="cate.jsp" style="text-decoration:none;"class="nav2">遊戲選單</a>
+                <a href="checklogin.jsp" style="text-decoration:none;"class="nav5">會員專區</a>
+                <a href="buy.html" style="text-decoration:none;"class="nav6">購物車</a>
+            </div>
+      </div>
+        </nav>
+    <!-- header end -->
+
+    <div class="center">
+        <img src="image/img/logo.png" width="30%" height="30%" alt="GamiiX" />
+    </div>
+    <div class="d3">
+        <div class="d2">
+            <div class="d11">
+                <h3 class="d1" >郭名翔</h3>
+                <img src="image/man/11044227.jpg" height="200" width="200" class="i2" />
+                <p class="info">這堂課著實有著許多值得學習的地方，不論是在網頁內容的製作或操作，或是定義以及模板規劃，都得小心去做，不然都有可能因為一紙錯誤而全盤毀之。而程式最容易出現的錯誤就是自己打錯然後找不到，所以debug也是一項難度艱鉅的任務，不過好在是我們有眼力特別好的同學，可以很快抓出錯誤，著實幫了很大的忙。這次的分組合作，我認為是還可以的，沒有爭吵，只有不斷地討論和整併，確實是一大喜事。</p>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+        <div class="d2">
+            <div class="d11">
+                <h3 class="d1">陳家昱</h3>
+                <img src="image/man/247434835_711782410225437_8048704796105123712_n.jpg" height="200" width="200" class="i2" />
+                <p class="info">我覺得這堂課對我來說真的受益良多，因為課程中有許多關於網頁製作的撇步跟教程，當然，我自己也會在課餘時間去嘗試或是練習一些新東西，俗話說：熟能生巧，所以我才能很快地打出我想要的code。雖然最近因為身體有些狀況所以不能到學校，不過上課內容裡面還是有以前上課的錄影檔跟投影片，我一樣可以從中得到一些我所沒有的新知識。分組的過程雖然不能和組員一起討論，但我都會利用我清醒的時間去完成我力所能及的事，這也就是為什麼我們這組並不會因為我而拆夥的原因，另外也感謝老師，沒有將我獨立分出來一組，否則我的工作量會完全壓垮我的</p>
+            </div>
+            <div>
+               
+            </div>
+        </div>
+        <div class="d2">
+            <div class="d11">
+                <h3 class="d1">柳承佑</h3>
+                <img src="image/man/liu.jpg" height="200" width="200" class="i2" />
+                <p class="info">我在這堂課中學到了很多有關html與css的知識，我覺得如果這堂課沒有老師實做的部份的話我絕對寫不出來，所以我很喜歡老師有真的帶我們實作，這樣可以讓我有更多可以研究其他相關知識的時間。也能夠在課程中看到老師與助教的用心，因為我寫的程式常常有一些怎麼抓都抓不出來的bug，但老師與助教都會非常有耐心的跟著我慢慢抓，一步一步由最一開始什麼都沒有到變成一個完整的網頁設計的過程，讓人很有成就感。困難的部分當然是有，因為我前面提過，我的程式真的很常有一些奇怪的bug，我自認是個很有耐心的人，但在debug時常常會搞到自己沒有耐性，耗費了所有耐性和時間換來的還是壞掉的程式，但好在網路上有很多開源資源可以參考，老師與助教也都能夠回答我的問題，這堂課雖然困難，但是還是很有趣。
+                    </p>
+            </div>
+            <div>
+        </div>
+        <!-- 添加更多的 d2 元素作為其他介紹 -->
+        <!-- 例如：
+        <div class="d2">
+            <div class="d11">
+                <img src="man/example.jpg" height="100" width="100" class="i2" />
+                <p class="info">自我介紹內容</p>
+            </div>
+            <div>
+                <h3 class="d1">姓名</h3>
+            </div>
+        </div>
+        -->
+    </div>
+    <div class="clear"></div>
+    <div style="height: 400px;"></div>
+    <footer>
+        <div class="footer">
+            <p class="footer-text">Copyright© 2023 by GAMIIX |<iframe  width=300 height=27 frameborder=0 scrolling=no src="counter.jsp" >
+                <div id="message"></div></p>
+        </div>
+    </footer>
+</body>
+</html>

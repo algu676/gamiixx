@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamiiX</title>
+    <link rel="icon" type="image/x-icon" href="image/1234.png">
+    <link rel="stylesheet" href="assets/index.css"/>
+    <link rel="stylesheet" href="assets/style.css"/>
+    <script src="assets/logout.js"></script>
+</head>
+<style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+    
+    .slideshow-container {
+      position: relative;
+    }
+    
+    .caption {
+      position: absolute;
+      top: -100px; /* 修改為負數，例如 -20px */
+      left: 0;
+      padding: 10px;
+      background-color: #444486;
+      color: #ffffff; /* 將字的顏色設置為白色 */
+    }
+    
+    #h1 {
+      position: absolute;
+      top: calc(100% - 220px); /* 將 #h1 的 top 設置為 calc(100% - 220px) */
+      left: 0;
+      width: 100%;
+      text-align: center;
+      background-color: #29242a;
+    }
+
+    footer {
+      position: fixed; /* 將頁尾固定在網頁底部 */
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #444486;
+      padding: 10px;
+      text-align: center;
+    }
+
+    h1 {
+      height: auto; /* 將 h1 元素的高度設置為 auto */
+    }
+    iframe{
+      color: #ffffff;
+    }
+</style>
+<body>
+    <!-- header -->
+    <nav class="topmenu">
+        <div class="logo">
+            <h1>
+              <a href="about.html"></a>
+            </h1>
+        </div>
+
+
+      <div class="list">
+            <div>
+                <a href="about.html" style="text-decoration:none;" class="nav1">關於</a>
+                <a href="cate.jsp" style="text-decoration:none;"class="nav2">商品</a>
+                <a href="checklogin.jsp" style="text-decoration:none;"class="nav5">會員專區</a>
+                <a href="buy.html" style="text-decoration:none;"class="nav6">購物車</a>
+            </div>
+      </div>
+    </nav>
+    <!-- header end -->
+    
+    <!--slideshow-->
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <a href="1.jsp?ID=45">
+          <div class="caption">Fumo，東方廚必備!</div>
+          <img src="image/img/89.jpg" alt="Image 1">
+        </a>
+      </div>
+      <div class="mySlides">
+        <a href="1.jsp?ID=42">
+          
+          <div class="caption">朝到出水</div>
+          <img src="image/img/p5.jpg" alt="Image 2">
+          
+        </a>
+      </div>
+      <div class="mySlides">
+        <a href="1.jsp?ID=28">
+          <div class="caption">Final Fantasy系列，最經典又耐玩的RPG遊戲!</div>
+          <img src="image/img/55.jpg" alt="Image 3">
+          
+        </a>
+      </div>
+    </div>
+    
+    <div class="prev" onclick="changeSlide(-1)">&#10094;</div>
+    <div class="next" onclick="changeSlide(1)">&#10095;</div>
+    
+    <script>
+      setInterval(function() {
+  changeSlide(1);
+}, 300023); 
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function changeSlide(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        
+        slides[slideIndex - 1].style.display = "block";
+      }
+    </script>
+    
+    <!--slideshow end-->
+    <!--games-->
+    <div id="h1">
+      <a href="about.html" ><img src="image/1234.png" style="height: 200px;"></a>
+    </div>
+    <!--games end-->
+    
+    <footer>
+        <div class="footer">
+          <p class="footer-text">Copyright© 2023 by GAMIIX |<iframe  width=300 height=27 frameborder=0 scrolling=no src="counter.jsp" >
+            <div id="message"></div></p>
+        </div>
+    </footer>
+</body>
+</html>

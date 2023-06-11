@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    font-family: "微軟正黑體";
+    ;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: #919191;
+}
+
+.topmenu {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: #7d93b5;
+    border-bottom-style: solid;
+    border-width: thin;
+    z-index: 1000;
+}
+
+.gotop {
+    z-index: 10;
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    opacity: 0.80;
+}
+
+.logo a {
+    padding: 0;
+    background-image: url(../image/img/logo.png);
+    background-size: 100%;
+    float: left;
+    margin-left: 10%;
+    width: 150px;
+    height: 100px;
+    border-radius: 2px;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.list {
+    padding: 20 10px;
+    /* width:80%; */
+    padding-top: 30px;
+    margin-left: 15%;
+    display: flex;
+    /* position: fixed; */
+    justify-content: space-around;
+
+}
+
+.list a :hover {
+    color: #050bc1
+}
+
+li {
+    display: inline;
+    padding: 10px 20px;
+
+}
+
+.listleft1 {
+    left: 40%;
+    position: absolute;
+    align-items: center;
+    overflow: hidden;
+    height: 100px;
+    width: 72px;
+    color: black;
+
+}
+
+.listleft2 {
+    left: 60%;
+    position: absolute;
+    align-items: center;
+    overflow: hidden;
+
+
+}
+
+.listright1 {
+    overflow: hidden;
+    align-items: center;
+    padding-top: 10px;
+    position: absolute;
+    right: 190px;
+
+}
+
+.listright2 a {
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    align-items: center;
+    padding-top: 5px;
+    position: absolute;
+    right: 150px;
+    background-image: url(../image/img/member.png);
+    background-size: cover;
+    float: left;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.listright3 a {
+    height: 30px;
+    width: 30px;
+    background-image: url(../image/img/shopcar.png);
+    overflow: hidden;
+    align-items: center;
+    padding-top: 10px;
+    position: absolute;
+    right: 90px;
+    background-color: transparent;
+    object-fit: fill;
+    background-size: contain;
+    float: left;
+    text-indent: 101%;
+    white-space: nowrap;
+}
+
+footer {
+    background-color: #362395;
+    padding: 1%;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+/* header end */
+.clear {
+    clear: both;
+    display: inline;
+}
+
+.rank {
+    padding: 10 20px;
+
+}
+
+.a {
+    position: absolute;
+    z-index: 2;
+    top: 95%;
+    left: 17%;
+}
+
+.b {
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+}
+
+.c {
+    position: absolute;
+    z-index: 2;
+    top: 95%;
+    left: 45%;
+}
+
+.d {
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+}
+
+.e {
+    position: absolute;
+    z-index: 2;
+    top: 95%;
+    left: 80%;
+}
+
+.f {
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+}
+
+.num1 {
+    text-align: center;
+    width: 10%;
+    display: inline-block;
+
+
+}
+
+.num2 {
+    display: inline-block;
+    width: 20%;
+    margin-left: 20%;
+    text-align: center;
+}
+
+.num3 {
+    margin-left: 15%;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+
+.num1 h2 {
+    position: relative;
+    display: inline-flex;
+    left: 256px;
+    align-items: center;
+    top: -20px;
+
+}
+
+.num2 h2 {
+    position: relative;
+    display: inline-flex;
+    left: 128px;
+    align-items: center;
+    top: -20px;
+}
+
+.num3 h2 {
+    position: relative;
+    display: inline-flex;
+    left: 96px;
+    align-items: center;
+    top: -20px;
+}
